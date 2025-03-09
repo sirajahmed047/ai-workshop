@@ -34,4 +34,12 @@ build/
 # Temporary files
 *.tmp
 *.swp
-*.swo 
+*.swo
+
+# Project specific files to exclude from deployment
+.cursorrules
+GOOGLE_FORM_SETUP_GUIDE.md
+GOOGLE_FORM_EMBED_EXAMPLE.html
+GITHUB_PAGES_DEPLOYMENT.md
+deploy.sh
+test-local.sh 
