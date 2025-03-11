@@ -3,28 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="AI Workshop for college students - Learn AI fundamentals, prompt engineering, and practical applications">
-    <title>AI Workshop - Empowering College Students with AI Skills</title>
+    <meta name="description" content="Generative AI Workshop for college students - Learn AI fundamentals, build your own Mini LLM, and master practical applications">
+    <title>GenAI Bootcamp - Build Your Own Mini LLM | Hyderabad</title>
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="assets/images/favicon.ico" sizes="any">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header class="header">
         <div class="container">
             <div class="header__logo">
-                <h1>AI Workshop</h1>
+                <h1>GenAI Bootcamp</h1>
             </div>
             <nav class="header__nav">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#workshops" class="nav__link">Workshops</a></li>
-                    <li class="nav__item"><a href="#testimonials" class="nav__link">Testimonials</a></li>
-                    <li class="nav__item"><a href="#pricing" class="nav__link">Pricing</a></li>
+                    <li class="nav__item"><a href="#features" class="nav__link">Features</a></li>
+                    <li class="nav__item"><a href="#instructors" class="nav__link">Instructors</a></li>
+                    <li class="nav__item"><a href="#curriculum" class="nav__link">Curriculum</a></li>
                     <li class="nav__item"><a href="#faq" class="nav__link">FAQ</a></li>
                     <li class="nav__item"><a href="#survey" class="nav__link nav__link--cta">Register</a></li>
                 </ul>
+                <button class="mobile-nav-toggle" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </nav>
         </div>
     </header>
@@ -34,9 +44,297 @@
         <section class="hero">
             <div class="container">
                 <div class="hero__content">
-                    <h2 class="hero__title">Master AI Skills for Your Academic & Professional Future</h2>
-                    <p class="hero__subtitle">Hands-on workshops designed specifically for college students</p>
-                    <a href="#survey" class="btn btn--primary">Register for Workshop</a>
+                    <span class="hero__badge">Exclusive Bootcamp in Hyderabad</span>
+                    <h2 class="hero__title">Master GenAI & Build Your Own Mini LLM</h2>
+                    <p class="hero__subtitle">A hands-on 1.5-month bootcamp designed specifically for college students who want to master Generative AI</p>
+                    <div class="hero__cta">
+                        <a href="#survey" class="btn btn--primary">Register Now <i class="fas fa-arrow-right"></i></a>
+                        <p class="hero__date"><i class="far fa-calendar-alt"></i> Starting May 1st, 2025</p>
+                    </div>
+                    <div class="hero__features">
+                        <div class="feature-tag"><i class="fas fa-chalkboard-teacher"></i> In-Person Training</div>
+                        <div class="feature-tag"><i class="fas fa-video"></i> Live Doubt Sessions</div>
+                        <div class="feature-tag"><i class="fas fa-user-graduate"></i> Direct Mentorship</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__decoration">
+                <div class="circle circle--1"></div>
+                <div class="circle circle--2"></div>
+                <div class="circle circle--3"></div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section__title">Why This Bootcamp Is Different</h2>
+                <p class="section__subtitle">GenAI & LLMs are taking over the tech industry – companies are desperate for engineers who can build AI applications</p>
+                
+                <div class="about__content">
+                    <div class="about__text">
+                        <p>This <strong>1.5-month hands-on bootcamp</strong> is designed to give you <strong>REAL AI SKILLS</strong>, <strong>INDUSTRY SECRETS</strong>, and <strong>PERSONAL GUIDANCE FROM EXPERTS</strong> – everything you need to <strong>break into AI and stand out in your career.</strong></p>
+                        <p class="highlight-text">And YES, you will build your own Mini LLM – an AI model trained from scratch!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features">
+            <div class="container">
+                <h2 class="section__title">What You Will Learn</h2>
+                <p class="section__subtitle">This is the only bootcamp where you will gain these skills</p>
+                
+                <div class="features__grid">
+                    <div class="feature-card">
+                        <div class="feature-card__icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3 class="feature-card__title">Train a Mini LLM</h3>
+                        <p class="feature-card__desc">Understand how AI models are built & fine-tuned from the ground up</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-card__icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="feature-card__title">Cutting-Edge Projects</h3>
+                        <p class="feature-card__desc">Work on real AI projects, not just watch lectures</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-card__icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="feature-card__title">1:1 Industry Guidance</h3>
+                        <p class="feature-card__desc">Get personal guidance from engineers at FAANG & Fortune 100</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-card__icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h3 class="feature-card__title">Resume Hacks</h3>
+                        <p class="feature-card__desc">Learn resume hacks & interview strategies for AI roles</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-card__icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3 class="feature-card__title">Master LLMs & RAG</h3>
+                        <p class="feature-card__desc">Learn advanced techniques in LLMs, RAG, and AI Agents</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-card__icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3 class="feature-card__title">Deploy AI Apps</h3>
+                        <p class="feature-card__desc">Build and deploy your own AI applications</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instructors Section -->
+        <section id="instructors" class="instructors">
+            <div class="container">
+                <h2 class="section__title">Learn from Top AI Engineers</h2>
+                <p class="section__subtitle">This isn't taught by random instructors – you'll be learning directly from experienced software engineers</p>
+                
+                <div class="instructors__grid">
+                    <div class="instructor-card">
+                        <div class="instructor-card__image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                        <h3 class="instructor-card__name">FAANG Engineer</h3>
+                        <p class="instructor-card__role">AI/ML Specialist</p>
+                    </div>
+                    
+                    <div class="instructor-card">
+                        <div class="instructor-card__image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                        <h3 class="instructor-card__name">Fortune 100 (#48)</h3>
+                        <p class="instructor-card__role">Senior AI Engineer</p>
+                    </div>
+                    
+                    <div class="instructor-card">
+                        <div class="instructor-card__image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                        <h3 class="instructor-card__name">Fortune 100 (#84)</h3>
+                        <p class="instructor-card__role">ML Infrastructure Lead</p>
+                    </div>
+                    
+                    <div class="instructor-card">
+                        <div class="instructor-card__image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                        <h3 class="instructor-card__name">Health Data Expert</h3>
+                        <p class="instructor-card__role">AI Applications Specialist</p>
+                    </div>
+                </div>
+                
+                <div class="instructors__benefits">
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle"></i>
+                        <p>Ask real-world AI & career questions</p>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle"></i>
+                        <p>Get insider job search & resume tips</p>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle"></i>
+                        <p>Understand how AI is used in industry</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Curriculum Section -->
+        <section id="curriculum" class="curriculum">
+            <div class="container">
+                <h2 class="section__title">Comprehensive Curriculum</h2>
+                <p class="section__subtitle">A structured learning path to master Generative AI and LLMs</p>
+                
+                <div class="curriculum__grid">
+                    <div class="curriculum-module">
+                        <div class="module__header">
+                            <h3 class="module__title">Module 1: Foundations of AI & Neural Networks</h3>
+                            <span class="module__duration">Week 1-2</span>
+                        </div>
+                        <ul class="module__topics">
+                            <li><i class="fas fa-check-circle"></i> Introduction to AI, ML, and Deep Learning</li>
+                            <li><i class="fas fa-check-circle"></i> Python for AI: NumPy, PyTorch basics</li>
+                            <li><i class="fas fa-check-circle"></i> Neural Network fundamentals</li>
+                            <li><i class="fas fa-check-circle"></i> Building your first neural network</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="curriculum-module">
+                        <div class="module__header">
+                            <h3 class="module__title">Module 2: Natural Language Processing</h3>
+                            <span class="module__duration">Week 3</span>
+                        </div>
+                        <ul class="module__topics">
+                            <li><i class="fas fa-check-circle"></i> Text processing and tokenization</li>
+                            <li><i class="fas fa-check-circle"></i> Word embeddings and language models</li>
+                            <li><i class="fas fa-check-circle"></i> Attention mechanisms</li>
+                            <li><i class="fas fa-check-circle"></i> Transformer architecture deep dive</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="curriculum-module">
+                        <div class="module__header">
+                            <h3 class="module__title">Module 3: Building Your Mini LLM</h3>
+                            <span class="module__duration">Week 4-5</span>
+                        </div>
+                        <ul class="module__topics">
+                            <li><i class="fas fa-check-circle"></i> LLM architecture and components</li>
+                            <li><i class="fas fa-check-circle"></i> Training and fine-tuning techniques</li>
+                            <li><i class="fas fa-check-circle"></i> Implementing your own Mini LLM</li>
+                            <li><i class="fas fa-check-circle"></i> Evaluation and optimization</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="curriculum-module">
+                        <div class="module__header">
+                            <h3 class="module__title">Module 4: Advanced Applications</h3>
+                            <span class="module__duration">Week 6</span>
+                        </div>
+                        <ul class="module__topics">
+                            <li><i class="fas fa-check-circle"></i> Retrieval Augmented Generation (RAG)</li>
+                            <li><i class="fas fa-check-circle"></i> Building AI agents and tools</li>
+                            <li><i class="fas fa-check-circle"></i> Deploying AI applications</li>
+                            <li><i class="fas fa-check-circle"></i> Industry best practices and career paths</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="curriculum__note">
+                    <p><i class="fas fa-info-circle"></i> Each module includes hands-on projects, coding exercises, and personalized feedback from instructors.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq">
+            <div class="container">
+                <h2 class="section__title">Frequently Asked Questions</h2>
+                <p class="section__subtitle">Everything you need to know about the GenAI Bootcamp</p>
+                
+                <div class="faq__grid">
+                    <div class="faq-item">
+                        <div class="faq-item__question">
+                            <h3>What will I learn in this bootcamp?</h3>
+                            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-item__answer">
+                            <p>You'll learn how to build and train a Mini LLM from scratch, work on cutting-edge AI projects, master LLMs, RAG, and AI Agents, and gain practical skills in deploying AI applications. The bootcamp focuses on hands-on learning with real-world applications.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-item__question">
+                            <h3>Do I need prior AI experience?</h3>
+                            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-item__answer">
+                            <p>Basic programming knowledge is recommended, but no specific AI experience is required. The bootcamp is designed to take you from fundamentals to advanced concepts in a structured way.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-item__question">
+                            <h3>What is the schedule like?</h3>
+                            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-item__answer">
+                            <p>The bootcamp includes 2 in-person classes per week and 2 online doubt-clearing sessions per week. The total duration is 1.5 months, starting May 1st, 2025.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-item__question">
+                            <h3>Will I get a certificate?</h3>
+                            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-item__answer">
+                            <p>Yes, you'll receive a certificate of completion after successfully finishing the bootcamp and all required projects.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-item__question">
+                            <h3>How is this different from online courses?</h3>
+                            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-item__answer">
+                            <p>Unlike most online courses, this bootcamp offers direct mentorship from industry professionals, hands-on project work, and personalized career guidance. You'll build a real Mini LLM from scratch, not just watch lectures.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-item__question">
+                            <h3>What hardware/software do I need?</h3>
+                            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-item__answer">
+                            <p>You'll need a laptop with at least 8GB RAM. All necessary software and tools will be provided during the bootcamp. For the more intensive model training, we'll provide cloud resources.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -44,8 +342,8 @@
         <!-- Survey Form Section -->
         <section id="survey" class="survey">
             <div class="container">
-                <h2 class="section__title">Register for AI Workshop</h2>
-                <p class="section__subtitle">Please fill out this form to help us tailor the workshop to your needs</p>
+                <h2 class="section__title">Register for GenAI Bootcamp</h2>
+                <p class="section__subtitle">Limited seats available! Fill out this form to secure your spot</p>
                 <div class="survey__container">
                     <!-- Google Form will be embedded here -->
                     <p class="survey__loading">Loading form...</p>
@@ -56,7 +354,35 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2023 AI Workshop. All rights reserved.</p>
+            <div class="footer__content">
+                <div class="footer__logo">
+                    <h3>GenAI Bootcamp</h3>
+                    <p>Building the next generation of AI engineers</p>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#instructors">Instructors</a></li>
+                            <li><a href="#curriculum">Curriculum</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="mailto:info@genaiworkshop.com">info@genaiworkshop.com</a></li>
+                            <li><a href="tel:+919700069793">+91 9700069793</a></li>
+                            <li>Hyderabad, India</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 GenAI Bootcamp. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
