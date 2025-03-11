@@ -42,4 +42,11 @@ GOOGLE_FORM_SETUP_GUIDE.md
 GOOGLE_FORM_EMBED_EXAMPLE.html
 GITHUB_PAGES_DEPLOYMENT.md
 deploy.sh
-test-local.sh 
+test-local.sh
+
+# Ignore all markdown files except README.md
+*.md
+!README.md
+
+# Browser tools
+browser-tools-mcp/ 

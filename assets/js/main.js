@@ -31,9 +31,55 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    // Mobile navigation toggle (if needed in the future)
+    // Mobile navigation toggle
     function setupMobileNav() {
-        // This is a placeholder for future mobile navigation functionality
+        // Add mobile navigation functionality
+        const header = document.querySelector('.header');
+        const navList = document.querySelector('.nav__list');
+        
+        // Create mobile menu button
+        const mobileMenuBtn = document.createElement('button');
+        mobileMenuBtn.className = 'mobile-menu-btn';
+        mobileMenuBtn.setAttribute('aria-label', 'Toggle navigation menu');
+        mobileMenuBtn.innerHTML = '<span></span><span></span><span></span>';
+        
+        // Only add mobile menu on smaller screens
+        if (window.innerWidth <= 768) {
+            header.querySelector('.container').appendChild(mobileMenuBtn);
+            navList.classList.add('nav__list--mobile');
+            
+            // Toggle menu on click
+            mobileMenuBtn.addEventListener('click', function() {
+                navList.classList.toggle('nav__list--active');
+                mobileMenuBtn.classList.toggle('mobile-menu-btn--active');
+            });
+            
+            // Close menu when clicking on a link
+            const navLinks = document.querySelectorAll('.nav__link');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    navList.classList.remove('nav__list--active');
+                    mobileMenuBtn.classList.remove('mobile-menu-btn--active');
+                });
+            });
+        }
+        
+        // Update on window resize
+        window.addEventListener('resize', function() {
+            if (window.innerWidth <= 768) {
+                if (!document.querySelector('.mobile-menu-btn')) {
+                    header.querySelector('.container').appendChild(mobileMenuBtn);
+                    navList.classList.add('nav__list--mobile');
+                }
+            } else {
+                const existingBtn = document.querySelector('.mobile-menu-btn');
+                if (existingBtn) {
+                    existingBtn.remove();
+                }
+                navList.classList.remove('nav__list--mobile');
+                navList.classList.remove('nav__list--active');
+            }
+        });
     }
     
     // Smooth scrolling for navigation links
@@ -50,7 +96,11 @@ document.addEventListener('DOMContentLoaded', function() {
                     if (targetElement) {
                         e.preventDefault();
                         
-                        targetElement.scrollIntoView({
+                        const headerHeight = document.querySelector('.header').offsetHeight;
+                        const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+                        
+                        window.scrollTo({
+                            top: targetPosition,
                             behavior: 'smooth'
                         });
                     }
@@ -59,8 +109,56 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
+    // Add animation on scroll
+    function setupScrollAnimation() {
+        const sections = document.querySelectorAll('section');
+        
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+        
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('section--visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+        
+        sections.forEach(section => {
+            section.classList.add('section--hidden');
+            observer.observe(section);
+        });
+    }
+    
+    // Setup FAQ accordion
+    function setupFAQ() {
+        const faqItems = document.querySelectorAll('.faq__item');
+        
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq__question');
+            
+            question.addEventListener('click', () => {
+                // Close all other items
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item && otherItem.classList.contains('active')) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+                
+                // Toggle current item
+                item.classList.toggle('active');
+            });
+        });
+    }
+    
     // Initialize functions
     embedGoogleForm();
     setupSmoothScrolling();
     setupMobileNav();
+    setupScrollAnimation();
+    setupFAQ();
 }); 
