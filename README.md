@@ -4,7 +4,7 @@ This repository contains the code for an AI Workshop business landing page targe
 
 ## Project Overview
 
-The GenAI Bootcamp is a 1.5-month hands-on program designed for college students who want to master Generative AI. The bootcamp features:
+The GenAI Bootcamp is a 6 weeks hands-on program designed for college students who want to master Generative AI. The bootcamp features:
 
 - Training from 4 experienced software engineers (from FAANG, Fortune 100 companies, and a leading health data company)
 - In-person training with live doubt sessions

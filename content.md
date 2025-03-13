@@ -1,4 +1,4 @@
-**Master GenAI & Build Your Own Mini LLM – Exclusive 1.5-Month Bootcamp in Hyderabad!**  
+**Master GenAI & Build Your Own Mini LLM – Exclusive 6 weeks Bootcamp in Hyderabad!**  
 
 🔥 **THE ONLY AI BOOTCAMP WHERE YOU WILL BUILD A MINI LLM FROM SCRATCH!**  
 
@@ -13,7 +13,7 @@
 ## **🚀 WHY THIS BOOTCAMP IS DIFFERENT**
 GenAI & LLMs are taking over the tech industry – companies are **desperate for engineers** who can build AI applications. But **learning from YouTube won’t make you industry-ready.**  
 
-This **1.5-month hands-on bootcamp** is designed to give you **REAL AI SKILLS**, **INDUSTRY SECRETS**, and **PERSONAL GUIDANCE FROM EXPERTS** – everything you need to **break into AI and stand out in your career.**  
+This ** 6 weeks hands-on bootcamp** is designed to give you **REAL AI SKILLS**, **INDUSTRY SECRETS**, and **PERSONAL GUIDANCE FROM EXPERTS** – everything you need to **break into AI and stand out in your career.**  
 
 📢 **And YES, you will build your own Mini LLM – an AI model trained from scratch!**  
 
@@ -35,3 +35,49 @@ This isn’t taught by random instructors – you’ll be learning directly from
 ✅ **Ask real-world AI & career questions**  
 ✅ **Get insider job search & resume tips**  
 ✅ **Understand how AI is used in industry**  
+
+## curriculum
+
+
+Week 1: Understanding LLMs & Prompt Engineering
+- AI vs Generative AI
+- How LLMs work - Tokens, prompting, fine-tuning
+- Prompt Engineering - Writing better prompts
+- LLM Performance Factors & Configurations
+- LangChain Basics & Hallucination Handling
+- Popular LLMs: OpenAI, Gemini, Open-Source models (Ollama, Mistral)
+- Using LLM APIs - Tokens, cost, best practices
+- Project: Mini Chatbot
+
+Week 2: Embeddings, Vector Search & RAG
+- Embeddings (ADA-002)
+- Vector Search & Similarity Search (Cosine, Dot Product)
+- Vector Databases & RAG (Retrieval Augmented Generation)
+- Keyword Search vs Semantic Search
+- Project: PDF Q&A Bot
+
+Week 3: AI Agents & Agentic RAG
+- What Are Agents?
+- Agentic AI & Agentic RAG
+- Langraph - AI Agent Framework
+- Project: Agentic AI RAG Bot
+
+Week 4: Build a Fully Functional AI Agent
+- Project: Advanced AI Agent (End-to-End AI System)
+
+Week 5: Running Open-Source LLMs & Fine-Tuning
+- Running Open-Source LLMs on Local CPU/GPU
+- Fine-Tuning Basics & LoRA (Low-Rank Adaptation)
+
+Week 6: Build Your Own Mini-LLM
+- How LLMs are built from scratch
+- Tokenization & Dataset Preparation
+- Training a Small Transformer Model (NanoGPT)
+- Project: Train a Mini-LLM
+
+Final Deliverables (What Students Take Away)
+- 4 Full-Stack AI Projects (Perfect for GitHub & Resume)
+- Certificate of Completion
+- Hands-on Experience with API & Open-Source LLMs
+- Discord Community Support (Post-Course)
+- Portfolio-Ready AI Skills for Jobs & Internships

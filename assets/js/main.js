@@ -125,13 +125,6 @@ document.addEventListener('DOMContentLoaded', function() {
             
             if (question) {
                 question.addEventListener('click', () => {
-                    // Close all other items
-                    faqItems.forEach(otherItem => {
-                        if (otherItem !== item && otherItem.classList.contains('active')) {
-                            otherItem.classList.remove('active');
-                        }
-                    });
-                    
                     // Toggle current item
                     item.classList.toggle('active');
                 });
@@ -184,6 +177,50 @@ document.addEventListener('DOMContentLoaded', function() {
             box-shadow: var(--shadow);
             z-index: 99;
             animation: slideDown 0.3s ease forwards;
+        }
+        
+        /* FAQ Accordion Styles */
+        .faq__grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            width: 100%;
+        }
+        
+        .faq-item {
+            break-inside: avoid;
+            page-break-inside: avoid;
+            width: 100%;
+            transition: none;
+        }
+        
+        .faq-item__question {
+            cursor: pointer;
+            width: 100%;
+        }
+        
+        .faq-item__answer {
+            display: none;
+            padding: 1rem;
+            width: 100%;
+        }
+        
+        .faq-item.active .faq-item__answer {
+            display: block;
+        }
+        
+        .faq-toggle {
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-item.active .faq-toggle {
+            transform: rotate(45deg);
+        }
+        
+        @media (max-width: 768px) {
+            .faq__grid {
+                grid-template-columns: 1fr;
+            }
         }
         
         @keyframes slideDown {
